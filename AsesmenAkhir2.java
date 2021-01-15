@@ -22,25 +22,25 @@ public class AsesmenAkhir2 {
         Scanner scanner = new Scanner(System.in);
         String[] name;
 
-        System.out.print("Masukkan Jumlah Antrian : ");
-        que = scanner.nextInt();
-        
-        name = new String[que];
-        savings = new int[que];
-        
-        System.out.println("Masukkan Nama Calon Haji dan Jumlah Tabungan : ");
-        for (int i = 0; i < name.length; i++) {
-            name[i] = scanner.next();
-            savings[i] = scanner.nextInt();
-        } 
-        
-        System.out.print("Masukkan Jumlah Quota Haji : ");
-        capacity = scanner.nextInt();
-        
-        System.out.print("Masukkan Minimum Fee Haji : ");
-        fee = scanner.nextInt();
-        
-        verification(name, savings, capacity, fee);
+            System.out.print("Masukkan Jumlah Antrian : ");
+            que = scanner.nextInt();
+
+            name = new String[que];
+            savings = new int[que];
+
+            System.out.println("Masukkan Nama Calon Haji dan Jumlah Tabungan : ");
+                for (int i = 0; i < name.length; i++) {
+                    name[i] = scanner.next();
+                    savings[i] = scanner.nextInt();
+                } 
+
+            System.out.print("Masukkan Jumlah Quota Haji : ");
+            capacity = scanner.nextInt();
+
+            System.out.print("Masukkan Fee Haji : ");
+            fee = scanner.nextInt();
+
+            verification(name, savings, capacity, fee);
     }
 
     private static void verification(String[] n, int[] s, int c, int f) {
